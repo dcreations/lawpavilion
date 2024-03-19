@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('counsel')->nullable();
-            $table->text('details')->nullable();
+            $table->text('details', 99299)->nullable();
             $table->string('image')->default('images/clients/avatar.png');
             $table->string('email')->nullable();
             $table->date('dob')->nullable();
